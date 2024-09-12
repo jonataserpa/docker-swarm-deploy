@@ -101,6 +101,29 @@ app.get('/calculate-temperature', (req, res) => {
   });
 });
 
+/**
+ * @swagger
+ * /test:
+ *   get:
+ *     summary: Checked
+ *     description: Test checked.
+ *     tags: [Check]
+ *     responses:
+ *       200:
+ *         description: Successfully checked.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Checked...!
+ */
+app.get('/test', (req, res) => {
+    res.send({ message: 'Checked...!' });
+});
+
 app.listen(port, () => {
   console.log(`API running on http://localhost:${port}`);
   console.log(`Swagger docs available at http://localhost:${port}/api-docs`);
