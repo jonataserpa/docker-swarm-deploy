@@ -41,5 +41,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SWARM_USER }}@${{ secrets.SWARM_MANAGER_IP }} << 'EOF'
             docker service update --force --image ${{ secrets.DOCKER_HUB_USERNAME }}/node-api-check:latest node-api-check-stack_app || \
-            docker stack deploy -c /path/to/docker-swarm.yaml node-api-check-stack
+            docker stack deploy -c /home/app-node/docker-swarm.yaml node-api-check-stack
           EOF
