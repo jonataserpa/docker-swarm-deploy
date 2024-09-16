@@ -121,7 +121,7 @@ app.get('/calculate-temperature', (req, res) => {
  *                   example: Checked...!
  */
 app.get('/test', (req, res) => {
-    res.send({ message: 'Health Checked test...!' });
+    res.send({ message: 'Health Checked...!' });
 });
 
 app.listen(port, () => {
