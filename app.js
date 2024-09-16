@@ -19,7 +19,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./index.js'], // File where the API docs are defined
+  apis: ['./app.js'], // File where the API docs are defined
 };
 
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
