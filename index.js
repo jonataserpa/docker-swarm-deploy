@@ -118,7 +118,7 @@ app.get('/calculate-temperature', (req, res) => {
  *               properties:
  *                 message:
  *                   type: string
- *                   example: Checked...!
+ *                   example: Health Checked Checked...!
  */
 app.get('/test', (req, res) => {
     res.send({ message: 'Health Checked 2024...!' });
