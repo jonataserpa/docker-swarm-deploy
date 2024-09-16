@@ -3,7 +3,7 @@ name: Docker Swarm Deploy
 on:
   pull_request:
     branches:
-      - homol
+      - main
 
 jobs:
   build:
