@@ -120,7 +120,7 @@ app.get('/calculate-temperature', (req, res) => {
  *                   example: Health Checked Checked...!
  */
 app.get('/test', (req, res) => {
-    res.send({ message: 'Health Checked 2024...!' });
+    res.send({ message: 'Health Checked...!' });
 });
 
 module.exports = app; 
