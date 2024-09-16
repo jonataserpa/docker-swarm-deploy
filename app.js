@@ -2,7 +2,6 @@ const express = require('express');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const app = express();
-const port = 8779;
 
 // Swagger configuration
 const swaggerOptions = {
@@ -15,7 +14,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: `http://localhost:${port}`,
+        url: `http://localhost:${8779}`,
         description: 'Local server',
       },
     ],
@@ -124,7 +123,4 @@ app.get('/test', (req, res) => {
     res.send({ message: 'Health Checked 2024...!' });
 });
 
-app.listen(port, () => {
-  console.log(`API running on http://localhost:${port}`);
-  console.log(`Swagger docs available at http://localhost:${port}/api-docs`);
-});
+module.exports = app; 
